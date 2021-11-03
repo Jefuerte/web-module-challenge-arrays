@@ -70,7 +70,7 @@ function is31Flavors(arr){
    return true;
  }
 }
-console.log(is31Flavors)
+console.log(is31Flavors())
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -142,10 +142,15 @@ Use the removeFlavorByName function below to do the following:
   HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
-  /*your code here*/
+function removeFlavorByName(arr2, string){
+  for(let i =0; i < arr2.length; i++){
+    if(arr2[i] === string){
+      arr2.splice(i, 1)
+    }
+  }
+  return arr2
 }
-
+console.log(removeFlavorByName(originalFlavors, 'Rocky Road'))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
